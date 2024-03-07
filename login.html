@@ -1,158 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pkchs login</title>
-    <style>
-        body{
-           background-color: #121b22;
-           color: white;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wait and Display Example</title>
+<style>
+    body{
+        background-color: #121b22;
+    }
+    .loader{
+            margin-top: 27%;
+            position: fixed;
+    left: 40%;
+
         }
-        button{
-            width: 6%;
-            position: absolute;
-            top: 53%;
-            left: 51%;
-            padding: 11px 10px;
-            background: #8080804d;
-            border: none;
-            outline: none;
+        #hiMessage{
             color: white;
-            border-radius: 6px;
+            padding-top: 24%;
+            font-family: monospace;
+            font-size: 28px;
+            position: fixed;
+            left: 39%;
         }
-        option {
-            background-color: #ffffff;
-            color: #333;
-        }
-        
-        input {
-            padding: 12px 32px;
-            position: absolute;
-            bottom: 40%;
-            background: #3c3c3c80;
-            outline: none;
-            border: none;
-            left: 44%;
-            color: rgba(255, 255, 255, 0.811);
-            font-size: 15px;
-        }
-        select {
-            width: 150px;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            background-color: #f2f2f24e;
-            color: #ffffff;
-            font-size: 16px;
-            appearance: none;
-        }
+    
 
-        option {
-            background-color: #fff;
-            color: #333;
-        }
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    @media screen and (max-width: 740px) {
+       .loader {
+        border: 19px solid #f3f3f3;
+        border-top: 16px solid rgb(0, 80, 0);
+        border-radius: 33%;
+        width: 48px;
+        height: 50px;
+        animation: spin 2s linear infinite;
+        margin: auto;
+        margin-top: 88%;
+    }
+    #hiMessage{
+        font-size: 24px;
+    color: white;
+    font-family: monospace;
+    text-align: center;
+    padding-top: 94%;
+    position: fixed;
+    left: 17%;
 
-        select:focus {
-            outline: none;
-        }
-        .loginame{
-            position: absolute;
-            top: 50%;
-            left: 40%;
-        }
-        .list{
-            position: absolute;
-            top: 53%;
-            left: 40%;
-        }
-        @media screen and (max-width: 768px){
-            body{
-                background-size: 102%;
-            }
-            button{
-                position: absolute;
-                top: 81%;
-                left: 40%;
-                width: 26%;
-
-            }
-            .list{
-                position: absolute;
-                top: 53%;
-                left: 33%;
-            }
-            .loginame{
-                position: absolute;
-                top: 44%;
-                left: 23%;
-            }
-            input{
-                padding: 14px 32px;
-                background: #3c3c3c80;
-                outline: none;
-                border: none;
-                color: rgba(255, 255, 255, 0.811);
-                font-size: 15px;
-                position: relative;
-                left: -5%;
-
-            }
-        }
-    </style>
+    }
+    }
+</style>
+<script>
+    function displayHiAfterDelay() {
+        setTimeout(function() {
+            document.getElementById('loader').style.display = 'none';
+            document.getElementById('hiMessage').innerText = 'Updates not found...';
+            document.getElementById('hiMessage').style.display = 'block';
+        }, 5000); // 5000 milliseconds = 5 seconds
+    }
+</script>
 </head>
-<body>
-    <div class="full">
-        <form id="list">
-            <div class="loginame">
-                <input type="name" id="name" name="name" placeholder="Enter name in small letters" autocomplete="off" required><br><br>
-            </div>
-            <div class="list">
-                <select id="ID">
-                    <option value="1">594</option>
-                    <option value="2">617</option>
-                    <option value="3">630</option>
-                    <option value="4">632</option>
-                    <option value="5">634</option>
-                    <option value="6">645</option>   
-                </select>  
-            </div>
-            <button id="submit" type="button">Login</button>
-        </form>
-        <script>
-            document.getElementById('submit').addEventListener('click', function() {
-                event.preventDefault(); 
-                var name = document.getElementById('name').value;
-                var ID = document.getElementById('ID').value;
-                if (name === 'spurgeon' && ID == 1) {
-                    alert("Account verified, Welcome SPURGEON");
-                    window.location.href = "plus.html";
-                    
-                } 
-                else if (name === 'phani' && ID === "2") {
-                    alert("Account verified, Welcome PHANI");
-                    window.location.href = "plus.html";
-                }
-                else if (name === 'praneeth' && ID === "3") {
-                    alert("Account verified, Welcome PRANEETH");
-                    window.location.href = "plus.html";
-                }
-                else if (name === 'kartheek' && ID === "4") {
-                    alert("Account verified, Welcome HEMANTH");
-                    window.location.href = "plus.html";
-                }
-                else if (name === 'hemanth' && ID === "5") {
-                    alert("Account verified, Welcome KARTHEEK");
-                    window.location.href = "plus.html";
-                }
-                else if (name === 'chandra' && ID === "6") {
-                    alert("Account verified, Welcome CHANDRA");
-                    window.location.href = "plus.html";
-                }
-                else {
-                    alert("Invalid name or roll number. Try again.");
-                }
-            });
-        </script>
+<body onload="displayHiAfterDelay()">
+    <div id="loader" class="loader"></div>
+    <div id="hiMessage"></div>
 </body>
 </html>
