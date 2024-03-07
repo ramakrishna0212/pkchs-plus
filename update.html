@@ -8,8 +8,29 @@
     body{
         background-color: #121b22;
     }
-    /* Styles for the loader */
-    .loader {
+    .loader{
+            margin-top: 27%;
+            position: fixed;
+    left: 40%;
+
+        }
+        #hiMessage{
+            color: white;
+            padding-top: 24%;
+            font-family: monospace;
+            font-size: 28px;
+            position: fixed;
+            left: 39%;
+        }
+    
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    @media screen and (max-width: 740px) {
+       .loader {
         border: 19px solid #f3f3f3;
         border-top: 16px solid #3498db;
         border-radius: 33%;
@@ -17,20 +38,18 @@
         height: 50px;
         animation: spin 2s linear infinite;
         margin: auto;
-        margin-top: 90%;
-    }
-
-    @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+        margin-top: 88%;
     }
     #hiMessage{
-        display: block;
-    font-size: 24px;
+        font-size: 24px;
     color: white;
     font-family: monospace;
     text-align: center;
     padding-top: 94%;
+    position: fixed;
+    left: 17%;
+
+    }
     }
 </style>
 <script>
