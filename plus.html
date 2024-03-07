@@ -16,11 +16,179 @@
 body{
     background: #121b22;
     background-image: url("https://e0.pxfuel.com/wallpapers/497/150/desktop-wallpaper-hopped-the-original-background-if-you-want-to-use-whatsapp-dark-mode-go-to-settings-chats-background-and-use-this-r-whatsapp.jpg");
-            background-color: black;
-            background-size: 100%;
-            color: white;
+    background-color: black;
+    background-size: 40%;
+    color: white;
+}
+.heading{
+    background-color: #1f2c34;
+    position: fixed;
+    padding: 12px 21px;
+    margin: -31px;
+    top: 4%;
+    width: 107%;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.365));
+}
+.brand{
+    COLOR: WHITE;
+    position: relative;
+    left: 2%;
+    font-size: 44px;
+    margin-top: 1%;
+    padding-bottom: 4%;
+}
+.brand i{
+    position: fixed;
+    top: 780px;
+    font-size: 18px;
+    left: 4%;
+}
+.menubar a{
+    color: white;
+    padding: 157px;
+    position: relative;
+    font-size: 16px;
+}
+.menubar a:hover{
+    color: #09a282;;
+    transition: .01s;
+    border-bottom: 3px solid #09a282;
+    padding-bottom: 8px;
+}
+.menubar a.active {
+    color: #09a282; 
+    border-bottom: 3px solid #09a282; 
+    padding-bottom: 8px;
 }
 
+.container{
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 50px;
+    scroll-padding: 10px;
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+    position: static;
+}
+.newupdates{
+    font-size: 14px;
+    position: fixed;
+    font-weight: 600;
+    top: 6%;
+    left: 91%;
+}
+.newupdates a{
+    font-size: 15px;
+    font-weight: 400;
+}
+.newupdates h6{
+    color: white;
+    position: fixed;
+    top: 20%;
+    font-weight: 400;
+}
+.container section{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    font-size: 43px;
+}
+.logout{
+    font-size: 20px;
+    background: #09a282;
+    width: fit-content;
+    position: fixed;
+    padding: 9px 11px;
+    border-radius: 12px;
+    left: 95%;
+    top: 92%;
+}
+.note-container{
+    position: inherit;
+    color: white;
+    width: 23%;
+    margin-top: 19%;
+    padding-left: 37%;
+    height: 16%;
+}
+input{
+    color: white;
+    border: solid 2px white;
+    outline: none;
+    background: none;
+    padding: 16px 24px;
+    position: relative;
+    left: -3%;
+    width: 97%;
+    border-radius: 45px;
+
+}
+button{
+    background: #09a282;
+    border: none;
+    border-radius: 23px;
+    padding: 8px 18px;
+    color: black;
+    position: relative;
+    left: 3%;
+    cursor: pointer;
+
+}
+.todo h1{
+    font-size: 48px;
+    font-weight: 600;
+    margin-left: 4%;
+    margin-bottom: -2%;
+
+}
+ul{
+    list-style: none;
+    font-size: 17px;
+    text-align: center;
+    line-height: 29px;
+    padding-top: 17%;
+    cursor: pointer;
+}
+.containers{
+    text-align: center;
+    width: 61%;
+    position: relative;
+    left: 19%;
+    top: 8%;
+    z-index: -1;
+    padding-bottom: 12%;
+    font-size: 14px;
+    color: white;
+    height: 99%;
+}
+.timings{
+    padding-bottom: 8px;
+    background-color: #484848;
+    border-radius: 26px;
+}
+.timings h5{
+    font-size: 20px;
+    background-color: #005c4b;
+    padding: 23px 1px;
+    border: solid 1px #000000;
+    border-radius: 20px;
+}
+.containe{
+    width: 32%;
+    line-height: 60px;
+    font-weight: 200;
+    position: relative;
+    z-index: -1;
+    top: 13%;
+    left: 33%;
+}
+.containe a:hover{
+    text-decoration: underline;
+    color: #000000;
+}
+    
 a{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -28,7 +196,11 @@ a{
 ::-webkit-scrollbar {
     display: none;
 }
-.heading{
+@media screen and (max-width: 768px) {
+    body{
+        background-size: 100%;
+    }
+    .heading{
     background-color: #1f2c34;
     position: fixed;
     padding: 12px 21px;
@@ -197,6 +369,8 @@ ul{
     text-decoration: underline;
     color: #000000;
 }
+    
+}
     </style>
 </head>
 <body>
@@ -289,7 +463,7 @@ ul{
             <section id="menu">
                 <div class="containers">
                     <div class="timings">
-                        <p><h5>Phani</h5></p>
+                        <p><h5>Monday</h5></p>
                         <p style="text-decoration: overline; font-weight: 600; color: wheat;">BREAKFAST</p><P>Idly, Peanut Chutney, Sambar, Bread, Butter, Jam, Tea, Coffee, Milk</P>
                         <p style="text-decoration: overline; font-weight: 600; color: wheat;">LUNCH</P><P >Phulka, Rajma Masala, White Rice, Tomato Drumstick/Cauliflower Curry, Variety Dal (Pappucharu), Curd, Roti Chutney, Fryums, Green Salad</P>
                         <p style="text-decoration: overline; font-weight: 600; color: wheat;">SNACKS</P><P>Boiled Black Channa with Onion Chopped & Tadka, Tea, Coffee, Milk</P>
