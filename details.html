@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+    <title>PKCHS</title>
+    <style>
+        * {
+            font-family: system-ui;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        body {
+            background-image: url("https://e0.pxfuel.com/wallpapers/497/150/desktop-wallpaper-hopped-the-original-background-if-you-want-to-use-whatsapp-dark-mode-go-to-settings-chats-background-and-use-this-r-whatsapp.jpg");
+            background-color: black;
+            background-size: 30%;
+            color: white;
+        }
+        .hero-content p {
+            top: -3%;
+            font-size: 21px;
+            background-color: #1f2c34;
+            width: 98%;
+            padding: 20px 52px;
+            border: solid 1px #0000007d;
+        }
+
+        .hero-content a {
+            color: rgb(255, 255, 255);
+            text-align: left;
+            top: 19px;
+            font-size: 16px;
+            left: 93%;
+        }
+        .menubar {
+            float: left;
+            padding: 63px;
+            width: 15%;
+            left: -1%;
+            top: 1%;
+            height: 85%;
+            border: solid 1px #000000;
+            z-index: -1;
+            position: fixed;
+            background: #202020;
+        }
+
+        .menubar a {
+            line-height: 72px;
+        }
+
+        .menubar a:hover {
+            background: #333333;
+            padding: 18px 100px 19px 20px;
+            position: relative;
+            left: -20px;
+            border-radius: 12px;
+        }
+        ::-webkit-scrollbar {
+            display: none;
+        }
+        h6{
+            font-size: 40px;
+            padding-top: 149%;
+        }
+        h5{
+            font-size: 20px;
+            background-color: #008669;
+            padding: 23px 1px;
+            border: solid 1px #000000;
+            border-radius: 20px;
+        }
+        .timings{
+            padding-bottom: 25px;
+            background-color: #333333;
+            border-radius: 26px;
+        }
+        p{
+            color: #a7a7a7;
+        }
+        input{
+            color: white;
+            border: none;
+            outline: none;
+            background: rgb(51 51 51);
+            padding: 14px 13px;
+            font-size: medium;
+            border-radius: 17px;
+            margin-top: 11%;
+        }
+        button{
+            margin-left: -8%;
+            background: none;
+            margin-top: -7.5%;
+            border: none;
+        }
+        .container{
+            text-align: center;
+            width: 96%;
+            position: relative;
+            left: 0%;
+            top: 5%;
+            z-index: -1;
+            padding-bottom: 12%;
+            font-size: 14px;
+            color: white;
+            height: 99%;
+        }
+        
+        .header-wrapper {
+            max-width: fit-content;
+            position: relative;
+        }
+        .scroll{
+            padding-left: 96%;
+            font-size: 20px;
+            margin-top: 53%;
+            position: fixed;
+        }
+        .dropdowns {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+
+            color: white;
+            padding: 16px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            left: -45%;
+            position: fixed;
+        }
+        @media screen and (max-width: 760px) {
+            body{
+                background-size: 100%;
+            }
+            .hero-content p{
+                left: -1%;
+            }
+            .hero-content a{
+                position: fixed;
+                left: 84%;
+                font-size: 13px;
+                top: 21px;
+            }
+            .menubar{
+                display: none;
+            }
+            .logo{
+                position: fixed;
+                left: 39%;
+                top: 84%;
+                width: 48%;
+            }
+            .dropbtn {
+                left: 9%;
+                position: fixed;
+                top: 5%;
+            }
+            .scroll{
+                display: none;
+            }
+            input{
+                color: white;
+                border: solid 1px black;
+                outline: none;
+                background: rgb(51 51 51);
+                padding: 18px 64px;
+                margin-top: 36.5%;
+                position: fixed;
+                left: 16%;
+                width: 39%;
+            }
+            h6{
+                margin-bottom: -4%;
+            }
+            .container{
+                text-align: center;
+                width: 96%;
+                position: relative;
+                left: 3%;
+                padding-top: 23%;
+                z-index: -1;
+                font-size: 13px;
+                color: white;
+                height: 99%;
+            }
+            i{
+                display: none;
+            }
+            .timings{
+                padding-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-content">
+        <p style="position: fixed;" >Members details</p>
+    </div>
+    <div class="dropdowns">
+        <a href="plus.html"><button id="menuBtn" class="dropbtn"><i class="fa-solid fa-arrow-left-long"></i></button></a>
+    </div>
+    <section id="time"> 
+        <div class="container">
+            <div class="timings">
+                <p><h5>Spurgeon</h5></p>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">GMAIL</p><P></P>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">PASSWORD</P><P ></P>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">ROOM NUMBER</P><P></P>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">PORTAL PASSWORD</p><P></P>
+            </div>
+
+            <div class="timings">
+                <p><h5>Phani</h5></p>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">GMAIL</p><P></P>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">PASSWORD</P><P ></P>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">ROOM NUMBER</P><P></P>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">PORTAL PASSWORD</p><P></P>
+            </div>
+    
+            <div class="timings">
+                <p><h5>Praneeth</h5></p>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">GMAIL</p><p></p>                
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">PASSWORD</P><p></p>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">ROOM NUMBER</P><p></p>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">PORTAL PASSWORD</p><p></p>
+            </div>
+
+            <div class="timings">
+                <p><h5>Hemanth</h5></p>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">GMAIL</p><p></p>                
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">PASSWORD</P><p></p>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">ROOM NUMBER</P><p></p>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">PORTAL PASSWORD</p><p></p>
+            </div>
+            
+            <div class="timings">
+                <p><h5>Kartheek</h5></p>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">GMAIL</p><p></p>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">PASSWORD</P><p></p>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">ROOM NUMBER</P><p></p>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">PORTAL PASSWORD</p><p></p>
+            </div>
+            <div class="timings">
+                <h5>Chandrhass</h5></P>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">GMAIL</p><p></p>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">PASSWORD</P><p></p>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">ROOM NUMBER</P><p></p>
+                <p style="text-decoration: overline; font-weight: 600; color: wheat;">PORTAL PASSWORD</p><p></p>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <div class="scroll">
+        <a href="#main-header"><img src="https://i.pinimg.com/474x/24/34/d1/2434d144e3962cbe0bdbeb7d2afab48e.jpg" alt="" width="60%"></a>
+    </div>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+</body>
+</html>

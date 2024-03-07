@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PKCHS PLUS</title>
+    <link rel="icon" type="image/x-icon" href="https://www.freepnglogos.com/uploads/apple-logo-png/apple-logo-png-apple-mac-vector-logo-download-23.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+
+    <style>
+        *{
+    font-family: system-ui;
+}
+body{
+    background: #121b22;
+    background-image: url("https://e0.pxfuel.com/wallpapers/497/150/desktop-wallpaper-hopped-the-original-background-if-you-want-to-use-whatsapp-dark-mode-go-to-settings-chats-background-and-use-this-r-whatsapp.jpg");
+            background-color: black;
+            background-size: 100%;
+            color: white;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.heading{
+    background-color: #1f2c34;
+    position: fixed;
+    padding: 12px 21px;
+    margin: -31px;
+    top: 4%;
+    width: 107%;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.365));
+}
+.brand{
+    COLOR: WHITE;
+    position: relative;
+    left: 8%;
+    font-size: 26px;
+    margin-top: 1%;
+    padding-bottom: 7%;
+}
+.brand i{
+    position: fixed;
+    top: 25%;
+    font-size: 18px;
+    left: 79%;
+
+}
+.menubar a{
+    color: white;
+    padding: 30px;
+    position: relative;
+    font-size: 16px;
+}
+.menubar a:hover{
+    color: #09a282;;
+    transition: .01s;
+    border-bottom: 3px solid #09a282;
+    padding-bottom: 8px;
+}
+.menubar a.active {
+    color: #09a282; /* Change to the desired color for the active menu item */
+    border-bottom: 3px solid #09a282; /* Add an underline to indicate selection */
+    padding-bottom: 8px;
+}
+
+.container{
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 50px;
+    scroll-padding: 10px;
+    width: 100%;
+    text-align: center;
+    padding-top: 1%;
+    position: static;
+}
+.newupdates{
+    font-size: 14px;
+    position: absolute;
+    font-weight: 600;
+    top: 21%;
+    left: 16%;
+}
+.newupdates a{
+    font-size: 15px;
+    font-weight: 400;
+}
+.newupdates h6{
+    color: white;
+    position: fixed;
+    top: 20%;
+    font-weight: 400;
+}
+.container section{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    font-size: 43px;
+}
+.logout{
+    font-size: 25px;
+    background: #09a282;
+    width: fit-content;
+    position: fixed;
+    padding: 9px 11px;
+    border-radius: 12px;
+    left: 80%;
+    top: 89%;
+}
+.note-container{
+    position: inherit;
+    color: white;
+    width: 81%;
+    margin-top: 49%;
+    padding-left: 6%;
+    height: 16%;
+}
+input{
+    color: white;
+    border: solid 2px white;
+    outline: none;
+    background: none;
+    padding: 16px 24px;
+    position: relative;
+    left: -3%;
+    width: 97%;
+    border-radius: 45px;
+
+}
+button{
+    background: #09a282;
+    border: none;
+    border-radius: 23px;
+    padding: 8px 18px;
+    color: black;
+    position: relative;
+    left: 3%;
+    cursor: pointer;
+
+}
+.todo h1{
+    font-size: 48px;
+    font-weight: 600;
+    margin-left: 4%;
+    margin-bottom: -2%;
+
+}
+ul{
+    list-style: none;
+    font-size: 17px;
+    text-align: center;
+    line-height: 29px;
+    padding-top: 17%;
+    cursor: pointer;
+}
+.containers{
+    text-align: center;
+    width: 96%;
+    position: relative;
+    left: 0%;
+    top: 5%;
+    z-index: -1;
+    padding-bottom: 12%;
+    font-size: 14px;
+    color: white;
+    height: 99%;
+}
+.timings{
+    padding-bottom: 8px;
+    background-color: #484848;
+    border-radius: 26px;
+}
+.timings h5{
+    font-size: 20px;
+    background-color: #005c4b;
+    padding: 23px 1px;
+    border: solid 1px #000000;
+    border-radius: 20px;
+}
+.containe{
+    width: 94%;
+    line-height: 60px;
+    font-weight: 200;
+    position: relative;
+    z-index: -1;
+    top: 9%;
+    left: 1%;
+}
+.containe a:hover{
+    text-decoration: underline;
+    color: #000000;
+}
+    </style>
+</head>
+<body>
+    <section id="up">
+        <div class="heading">
+            <div class="brand">
+                <span>Pkchs</span>
+                <a href="details.html"><i class="fa-regular fa-user"></i></a>
+            </div>
+            <div class="menubar">
+                <a href="#note"><i class="fa-solid fa-envelope-open-text"></i></a>
+                <a href="#menu">Menu</a>
+                <a href="#time">Time</a>
+                <a href="#site">Sites</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="newupdates">
+                <a href=""><i class="fa-solid fa-arrow-up-right-from-square" style="color: white;position: relative;left: -10%;"></i></a>
+                <a href="update.html">New updates</a>
+                </script>
+            </div>
+            <section id="note">
+                <div class="note-container">
+                    <div class="todo">
+                        <h1>Notepad</h1>
+                        <div class="search">
+                            <input type="text" id="search-bar" placeholder="Enter the note here.....">
+                            <button onclick="addTask()">ADD  <i class="fa-solid fa-plus"></button></i>
+                        </div>
+                        <ul id="list-container"></ul>
+                    </div>
+                </div>
+                <script>
+                    const searchBar = document.getElementById("search-bar");
+                    const listcontainer = document.getElementById("list-container");
+
+                    function addTask(){
+                        if(searchBar.value === ''){
+                            alert("You didn't write any note");
+                        }
+                        else{
+                            let li = document.createElement("li")
+                            li.innerHTML = searchBar.value;
+                            listcontainer.appendChild(li);
+
+                            let span = document.createElement("span")
+                            span.innerHTML = " x";
+                            li.appendChild(span);
+                        }
+                        searchBar.value="";
+                        saveData();
+                    }
+
+                    listcontainer.addEventListener("click", function(e){
+                        /* tick mark checked*/
+                        if(e.target.tagName === "LI"){
+                            e.target.classList.toggle("checked");
+                            saveData();
+                        }
+                        /* delete */
+                        else if(e.target.tagName === "SPAN"){
+                            e.target.parentElement.remove();
+                            saveData();
+                        }
+                    });
+
+                    function saveData(){
+                        /* saves data */
+                        localStorage.setItem("data", listcontainer.innerHTML);
+
+                    }
+                    function showTask(){
+                        /* display data */
+                        listcontainer.innerHTML = localStorage.getItem("data");
+                    }
+                    showTask();
+                    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                        anchor.addEventListener('click', function(e) {
+                            e.preventDefault();
+                            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        });
+                    });
+                </script>
+            </section>
+            
+
+            <section id="menu">
+                <div class="containers">
+                    <div class="timings">
+                        <p><h5>Phani</h5></p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">BREAKFAST</p><P>Idly, Peanut Chutney, Sambar, Bread, Butter, Jam, Tea, Coffee, Milk</P>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">LUNCH</P><P >Phulka, Rajma Masala, White Rice, Tomato Drumstick/Cauliflower Curry, Variety Dal (Pappucharu), Curd, Roti Chutney, Fryums, Green Salad</P>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">SNACKS</P><P>Boiled Black Channa with Onion Chopped & Tadka, Tea, Coffee, Milk</P>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">DINNER</p><P>Phulka, Egg Masala, Channa Masala, White Rice, Sambar, South Type Vegetable Curry, Buttermilk, Banana</P>
+                    </div>
+        
+                    <div class="timings">
+                        <p><h5>Tuesday</h5></p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">BREAKFAST</p><p>Potato Wheat Paratha, Curd, Pickle, Boiled Egg, Bread, Butter, Jam, Tea, Coffee, Milk</p>                
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">LUNCH</P><p>Phulka, Methi Chaman, White Rice, Sambar, Vegetable South Curry, Curd, Roti Chutney, Fryums</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">SNACKS</P><p>Punugu, Chutney,Tea, Coffee, Milk</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">DINNER</p><p>Poori, Mixed Vegetable, Podina Rice, Raita, Butter Milk, Ice Cream</p>
+                    </div>
+                    
+                    <div class="timings">
+                        <p><h5>Wednesday</h5></p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">BREAKFAST</p><p>Vada, Hot Pongal, Chutney, Sambar, Bread, Butter, Jam, Tea, Coffee, Milk</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">LUNCH</P><p>Phulka, Kadai Vegetable, White Rice, Tomato Dal, Cabbage Peas Curry, Rasam, Curd, Roti Chutney, Fryums, Green Salad</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">SNACKS</P><p>Boiled Masala Corn, Tea, Coffee, Milk</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">DINNER</p><p>Phulka, Paneer Butter Masala, Andra Chicken Curry, White rice, Rasam, Buttermilk</p>
+                        
+                    </div>
+                    <div class="timings">
+                        <h5>Thursday</h5></P>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">BREAKFAST</p><p>Chole Poori, Channa Masala, Bread, Butter, Jam, Tea, Coffee, Milk</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">LUNCH</P><p>Phulka, Dal Tadka, White rice, Spinach Moong Dal (Keerai Kootu), Sambar, Cabbage -65, Curd, Roti Chutney, Fryums</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">SNACKS</P><p>Green Banana Bajji/ Onion Pakoda, Chutney, Tea, Coffee, Milk</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">DINNER</p><p>Phulka, Navarathan Korma (Mix veg Curry) White Rice, Sambar, Potato Kara Curry, Buttermilk, Banana</p>
+                        
+                    </div>
+                    <div class="timings">
+                        <h5>Friday</h5></P>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">BREAKFAST</p><p>Rava Kitchadi, Chutney, Egg Omelette, Bread, Butter, Jam, Tea, Coffee, Milk.</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">LUNCH</P><p>Pulka, Green Peas Masala, White rice, Tindly Peanut Fry (Dondakaya), Mor Kuzhambu (Dahee ka Soop), Rasam, Curd, Roti Chutney, Fryums, Green Salad</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">SNACKS</P><p>Peanut/White Channa Sundal, Tea, Coffe & Milk</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">DINNER</p><p>Phulka, Kadai Paneer, North Indian Style, Chicken Curry, White rice, Rasam, Buttermilk</p>
+                    </div>
+                    <div class="timings">
+                        <h5>Saturday</h5></P>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">BREAKFAST</p><p>Plain Paratha (Wheat), Dum Potato Curry, Bread, Butter Jam, Tea, Coffee, Milk</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">LUNCH</P><p>Phulka, Mix Veg. Curry, White Rice, Variety of Dal (Mudda Pappu), Ghee, Lady Finger (Bendi) Peanut Fry, Sweet Pongal/Rava Kesari, Curd, Mango Pickle (Avakaya), Fryums</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">SNACKS</P><p>Potato Samosa, Sauce, Tea, Coffee, Milk</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">DINNER</p><p>Phulka, Dal Makhani, Tomato Rice, Raita,Buttermilk, Banana</p>
+                        
+                    </div>
+                    <div class="timings">
+                        <p><h5>Sunday</h5></P></p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">BREAKFAST</p><p>Set Dosa (Uttappam), Potato Masala, Groudnut Chutney, Sambar, Bread, Butter, Jam, Tea, Coffee & Milk</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">LUNCH</P><p>Chicken Biryani, Veg-Biryani, Raita, Veg. Gravy, Onion & Lemon</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">SNACKS</P><p>Muffin (Eggless), Tea, Coffee, Milk</p>
+                        <p style="text-decoration: overline; font-weight: 600; color: wheat;">DINNER</p><p>Phulka, Vegetables Kofta Curry, Bisibelabath (Sambar Rice), Fryums, Buttermilk, Semiya Payasam</p>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <section id="time">
+                <div class="containers">
+                    <div class="timings">
+                        <p><h5>Monday</h5></p>
+                        <p>09:00 am - 11:00 am - <br>ISES (S606)</p>
+                        <p>11:01 am - 12:00 pm - <br>OE</P>
+                        <p>03:31 pm - 05:30 pm - <br>Software Engineering(W402)</P>
+                    </div>
+        
+                    <div class="timings">
+                        <P><h5>Tuesday</h5></P>
+                        <p>09:00 am - 11:00 am - <br>APDS LAB( W403 ) / ML( W208 )</p>
+                        <p>11:01 am - 12:00 pm - <br>Software Engineering(W402)</p>
+                        <p>01:01 pm - 02:00 pm - <br>ISES (S302)</p>
+                        <p>02:01 pm - 04:00 pm - <br>OE </p>
+                    </div>
+                    
+                    <div class="timings">
+                        <P><h5>Wednesday</h5></P>
+                        <p>09:00 am - 11:00 am - <br>Software Engineering Lab (W102)</p>
+                        <p>11:01 am - 12:00 pm - <br>OE</p>
+                        <p>02:01 pm - 03:30 pm - <br>Cloud computing (W502)</p>
+                        <p>03:01 pm - 05:00 pm - APDS( W403 ) /  ML LAB( W016 )</p>
+                    </div>
+                    <div class="timings">
+                        <P><h5>Thursday</h5></P>
+                        <p>09:00 am - 10:30 am - <br>APDS( (S607) ) /  ML LAB( W208 )</p>
+                        <p>10:30 am - 12:00 pm - <br>Cloud computing (W502)</p>
+                        <p>02:01 pm - 04:00 pm - <br>OE</p>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <section id="site">
+                <div class="containe">
+                    <div class="timings" style="line-height: 40px;padding: 25px;">
+                        <a href="https://student.srmap.edu.in/srmapstudentcorner/StudentLoginPage" target="_blank" style="font-size: 25px;font-weight: 600;">Portal</a><br>
+                        <a href="https://swayamopenid.b2clogin.com/swayamopenid.onmicrosoft.com/B2C_1_swayam2/oauth2/v2.0/authorize?response_type=code&client_id=bf9d75c0-a6d0-4ab0-9e9a-054d24e2fea4&rgb(218, 0, 0)irect_uri=https%3A%2F%2Fonlinecourses.nptel.ac.in%2Fwso_ok&scope=https%3A%2F%2Fswayamopenid.onmicrosoft.com%2Fapi%2Fuser_impersonation+offline_access+openid&state=LP0Do1iCpnVdZZOSDCOjl2ScmvlqOM&access_type=authorization_code" target="_blank" style="font-size: 25px;font-weight: 600;">Swayam</a><br>
+                        <a href="https://classroom.google.com/u/0/h" target="_blank" style="font-size: 25px;font-weight: 600;">Classroom</a><br>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank"  style="font-size: 25px;font-weight: 600;">Gmail</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <div class="logout">
+       <a href="login.html"> <i class="fa-solid fa-right-from-bracket" style="color: black;"></i></a>
+    </div>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+    </script>
+</body>
+</html>
